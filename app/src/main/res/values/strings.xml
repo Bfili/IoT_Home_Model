@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IoTHomeModel</string>
+    <string name="startButtonString">START</string>
+    <string name="main_menu_text">Menu Główne</string>
+    <string name="temperature_button_menu_text">Kontrola temperatury</string>
+    <string name="lamp_button_menu_text">Oświetlenie korytarza</string>
+    <string name="door_control_button_menu_text">Kontrola drzwi</string>
+    <string name="change_ip_menu_button_text">Ustawienia sieci</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,84 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainmenuconstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/datagraph"
+            android:layout_width="306dp"
+            android:layout_height="167dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/graphEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Włącz podgląd temperatury"
+            app:layout_constraintBottom_toTopOf="@+id/temperature_control_information_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/datagraph"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/temperature_control_information_text"
+            android:layout_width="404dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="96dp"
+            android:gravity="center"
+            android:text="Zmień temperaturę zadaną w pomieszczeniu"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/datagraph" />
+
+        <EditText
+            android:id="@+id/edit_temperature_text"
+            android:layout_width="79dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="76dp"
+            android:ems="10"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:text="27.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/increment_temperature_button"
+            app:layout_constraintHorizontal_bias="0.916"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/increment_temperature_button"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="108dp"
+            android:text="+"
+            app:layout_constraintBottom_toTopOf="@+id/decrement_temperature_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temperature_control_information_text" />
+
+        <Button
+            android:id="@+id/decrement_temperature_button"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="108dp"
+            android:layout_marginBottom="40dp"
+            android:text="-"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

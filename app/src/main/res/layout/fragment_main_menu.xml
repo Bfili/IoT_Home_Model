@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainmenuconstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/menu_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:text="@string/main_menu_text"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/temperature_control_menu_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/temperature_button_menu_text"
+            app:layout_constraintBottom_toTopOf="@+id/corridor_lamp_control_menu_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menu_text" />
+
+        <Button
+            android:id="@+id/corridor_lamp_control_menu_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lamp_button_menu_text"
+            app:layout_constraintBottom_toTopOf="@+id/doors_control_menu_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temperature_control_menu_button" />
+
+        <Button
+            android:id="@+id/doors_control_menu_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/door_control_button_menu_text"
+            app:layout_constraintBottom_toTopOf="@+id/change_ip_menu_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/corridor_lamp_control_menu_button" />
+
+        <Button
+            android:id="@+id/change_ip_menu_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/change_ip_menu_button_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doors_control_menu_button" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
